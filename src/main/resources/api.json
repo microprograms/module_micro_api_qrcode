@@ -1,0 +1,115 @@
+{
+	"apiDefinitions": [
+		{
+			"comment": "创建二维码，返回DataUrl编码的文本格式",
+			"name": "createQrcodeAsDataUrl",
+			"requestDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "文本内容",
+						"example": "http://scratch.flyingbears.cn",
+						"ext": {
+							"verify": "notBlank"
+						},
+						"javaType": "String",
+						"name": "text",
+						"required": true
+					},
+					{
+						"comment": "图片宽度",
+						"example": "600",
+						"ext": {
+							"verify": "notBlank"
+						},
+						"javaType": "Integer",
+						"name": "width",
+						"required": true
+					},
+					{
+						"comment": "图片高度",
+						"example": "600",
+						"ext": {
+							"verify": "notBlank"
+						},
+						"javaType": "Integer",
+						"name": "height",
+						"required": true
+					},
+					{
+						"comment": "边距",
+						"example": "2",
+						"ext": {
+							"verify": "notBlank"
+						},
+						"javaType": "Integer",
+						"name": "margin",
+						"required": true
+					},
+					{
+						"comment": "图片格式",
+						"example": "png",
+						"ext": {
+							"verify": "notBlank"
+						},
+						"javaType": "String",
+						"name": "format",
+						"required": true
+					},
+					{
+						"comment": "图片MIME-Type",
+						"example": "image/png",
+						"ext": {
+							"verify": "notBlank"
+						},
+						"javaType": "String",
+						"name": "mimeType",
+						"required": true
+					}
+				]
+			},
+			"responseDefinition": {
+				"fieldDefinitions": [
+					{
+						"comment": "data url",
+						"example": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYAQAAAACWHaVxAAACbUlEQVR42u3dQXajMAwAULPKMXpUOCrH6ArPJFPAlk2G9nXn7xUh5Gen5ydLIuXfW4nFYrFYLBaLxWL9zNpSvR77t5/PT3Ne9zvr34/TflGumcVisVi1NZ+h9vnLl/7xz3pevNby+jDtzxxrY7FYLFbHWvdoW0TkIlhPTdTe9oDOYrFYrDvWsm+Cl1eMPp6ZqjjOYrFYrFvW19ev0MxisVisH1lVTiFepD25ELO3N/ITLBaLNaQVzsC2Klj3Lu6fp7FYLNZ41ptVb4LLne73679YLBZrGKsNxLn55bYXGZR35vJ4jMVisVghRtcVWkfl63IWb6UyRVsfj7FYLBarySlcJA6qDMLlMywWi8WqYvTRP3AVkeu973rG6Hbvy2KxWKzQ5vpoOrXav6nvzCwWi8WKe9/ybmfvW56BVf/36OQUWCwWa3Crzsz2E7JlN1fRHJsv4z2LxWINbMUY/Xnua6di1kDIO0zdnAKLxWKxYq42heKtnGMfwlyPd3lzBsZisVhDW8VBV/dUbM5VIcLRN7uxWCwWqzvDpTj6SiEip6pMdikv2pwCi8ViDW813QJnlmEK4fsiuZBZLBaLFXtic1mPlZpGgrZmK8WhAywWi8W6nOGyNcVbUy+O93u3WCwWa3jr/TsIQ/Y2Ve906fcYsFgsFqvYxfb6XXszB7d3+2gWi8VirU38rRIH5ayBYn1czC9ksVgs1hrqXEMjQYqTW6sCLxaLxWL9N0Yf+9qlG5GLdMO99xmyWCzWaFbMKeT6zsWcl3xRs8VisVijW+EMbLsektVa6cb7DFksFmso65cWi8VisVgsFovF+v76Az1cd2gdq89BAAAAAElFTkSuQmCC",
+						"ext": {
+							"verify": "notBlank"
+						},
+						"javaType": "String",
+						"name": "dataUrl",
+						"required": true
+					}
+				]
+			}
+		}
+	],
+	"comment": "二维码",
+	"changeLogs": [
+		{
+			"version": "v1.0.0",
+			"items": [
+				"初版"
+			]
+		}
+	],
+	"description": "这是一个简单的二维码模块",
+	"errorCodeDefinitions": [
+		{
+			"message": "状态异常",
+			"code": "invalid_status"
+		}
+	],
+	"mixinDefinitions": [],
+	"modelDefinitions": [],
+	"serverAddressDefinition": {
+		"host": "127.0.0.1",
+		"port": 8002,
+		"url": "/api"
+	},
+	"showdocDefinition": {
+		"apiKey": "",
+		"apiToken": "",
+		"url": "http://www.showdoc.cc/server/api/item/updateByApi"
+	},
+	"version": "v1.0.0"
+}
