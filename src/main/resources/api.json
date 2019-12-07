@@ -2,7 +2,7 @@
 	"apiDefinitions": [
 		{
 			"comment": "创建二维码，返回DataUrl编码的文本格式",
-			"name": "createQrcodeAsDataUrl",
+			"name": "CreateQrcodeAsDataUrl",
 			"requestDefinition": {
 				"fieldDefinitions": [
 					{

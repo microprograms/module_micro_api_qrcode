@@ -22,7 +22,7 @@ import eu.maxschuster.dataurl.DataUrlEncoding;
 import eu.maxschuster.dataurl.DataUrlSerializer;
 import java.util.List;
 
-@MicroApi(name = "createQrcodeAsDataUrl", version = "v1.0.0")
+@MicroApi(name = "CreateQrcodeAsDataUrl", version = "v1.0.0")
 @Comment("创建二维码，返回DataUrl编码的文本格式")
 public class CreateQrcodeAsDataUrl implements Api {
 
